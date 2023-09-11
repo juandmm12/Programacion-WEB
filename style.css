@@ -1,0 +1,55 @@
+:root {
+  /* CSS HEX */
+  --champagne-pink: #ffe2d1ff;
+  --nyanza: #e1f0c4ff;
+  --cambridge-blue: #6bab90ff;
+  --viridian: #55917fff;
+  --eggplant: #5e4c5aff;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--viridian);
+    justify-content: space-between;
+    padding: 15px;
+}
+.columna {
+    background-color: var(--eggplant);
+    border-radius: 15px;
+    border-style: dashed;
+}
+
+section{
+    color:blue;
+    background-color:var(--viridian);
+}
+.parrafo{
+    color:black;
+}
+.ficha{ 
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 180px;
+    border-style: solid; background-color: var(--champagne-pink);
+    border-radius: 25px;
+
+}
+.foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 360px;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 360px;
+    display: flex;
+    justify-content: right;
+}

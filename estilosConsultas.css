@@ -1,0 +1,29 @@
+:root {
+  /* CSS HEX */
+  --champagne-pink: #ffe2d1ff;
+  --nyanza: #e1f0c4ff;
+  --cambridge-blue: #6bab90ff;
+  --viridian: #55917fff;
+  --eggplant: #5e4c5aff;
+}
+h
+head {
+      background-color: var(--eggplant);
+      color: var(--viridian);
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      text-align: center;
+}
+body {
+      background-color: var(--eggplant);
+      color: var(--viridian);
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      text-align: center;
+}
+p {
+      color: var(--viridian);
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      text-align: center;
+}

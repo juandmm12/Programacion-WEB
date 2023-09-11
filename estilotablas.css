@@ -1,0 +1,112 @@
+:root {
+  /* CSS HEX */
+  --champagne-pink: #ffe2d1ff;
+  --nyanza: #e1f0c4ff;
+  --cambridge-blue: #6bab90ff;
+  --viridian: #55917fff;
+  --eggplant: #5e4c5aff;
+}
+
+body {
+  width: 100hw;
+  color: var(--viridian);
+  background-color: var(--cambridge-blue);
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--nyanza);
+  font-size: 28px;
+}
+
+table {
+  background-color: var(--eggplant);
+  width: 350px;
+  height: 350px;
+}
+
+th {
+  width: 200px;
+  text-align: center;
+  color: black;
+  background-color: var(--champagne-pink);
+  padding: 15px 10px 20px 10px;
+  align-items: center;
+}
+
+td {
+  text-align: center;
+  width: 100px;
+  color: black;
+}
+
+.alerta {
+  background-color: red;
+  color: var(--viridian);
+  font-style: italic;
+}
+
+.columna {
+  width: 20%;
+}
+
+.columna2 {
+  width: 25%;
+}
+
+/* jfasjfasfasfpasf*/
+
+.fila {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: row;
+  padding: 15px;
+  gap: 15px;
+}
+.formulario {
+  width: 50%;
+  background-color: var(--eggplant);
+}
+.filaForm {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: row;
+  padding: 15px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.caja {
+  flex-direction: row;
+  background-color: brown;
+  border-radius: 35px 90px;
+  width: 80px;
+  height: 80px;
+  margin: 15px;
+  text-align: center;
+  color: bisque;
+}
+
+.caja:hover {
+  background-color: burlywood;
+  border-color: yellowgreen;
+  color: black;
+  border-style: solid;
+  border-radius: 90px 35px;
+}
+
+form {
+  flex-direction: column;
+  display: flex;
+  background-color: #e1f0c4ff;
+  border-radius: 15px;
+  border-style: solid;
+  padding: 15px;
+
+  width: 30%;
+}
