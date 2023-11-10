@@ -1,55 +1,102 @@
 :root {
-  /* CSS HEX */
   --champagne-pink: #ffe2d1ff;
   --nyanza: #e1f0c4ff;
   --cambridge-blue: #6bab90ff;
   --viridian: #55917fff;
   --eggplant: #5e4c5aff;
+  --font-family: "Arial", sans-serif;
 }
-header{
-    display: flex;
-    flex-direction: row;
-    background-color: var(--viridian);
-    justify-content: space-between;
-    padding: 15px;
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--nyanza);
 }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: var(--eggplant);
+  color: white;
+}
+
 .columna {
-    background-color: var(--eggplant);
-    border-radius: 15px;
+  background-color: var(--eggplant);
+  border-radius: 15px;
+  border-style: dashed;
+  color: white;
+  padding: 15px;
+}
+
+section {
+  color: var(--eggplant);
+  background-color: var(--viridian);
+  padding: 15px;
+    border-radius: 15px;    
     border-style: dashed;
+    justify-content: center;
 }
 
-section{
-    color:blue;
-    background-color:var(--viridian);
+.parrafo {
+  color: var(--cambridge-blue);
+  line-height: 1.6;
 }
-.parrafo{
-    color:black;
-}
-.ficha{ 
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
-    height: 180px;
-    border-style: solid; background-color: var(--champagne-pink);
-    border-radius: 25px;
 
+.parrafo {
+  color: black;
 }
-.foto{
-    width: 150px;
-    height: 150px;
-    border-radius: 360px;
+.ficha {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 180px;
+  border-style: solid;
+  background-color: var(--champagne-pink);
+  border-radius: 25px;
+}
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 360px;
 }
 
 .fila {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 360px;
-    display: flex;
-    justify-content: right;
+  width: 100px;
+  height: 100px;
+  border-radius: 360px;
+  display: flex;
+  justify-content: right;
 }
+/* Estilos para pantallas de tamaño grande (desktops, laptops) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para pantallas de tamaño mediano (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+footer {
+    padding-left: 50px;
+    display: flex;
+    background-color: #181823;
+}}

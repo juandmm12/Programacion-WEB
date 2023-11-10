@@ -1,0 +1,256 @@
+:root {
+  --champagne-pink: #ffe2d1ff;
+  --nyanza: #e1f0c4ff;
+  --cambridge-blue: #6bab90ff;
+  --viridian: #55917fff;
+  --eggplant: #5e4c5aff;
+  --font-family: "Arial", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+
+body
+{
+    background-color: var(--viridian);
+    background-size: 100%;
+}
+
+.titulo
+{
+    margin: 0;
+    padding: 0px;
+    font-family: roboto;
+    font-size: 70px;
+    color: rgb(103, 218, 218);
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.cuerpo
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   
+}
+
+.tarjeta
+{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.tarjeta .cara
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: -5s;
+}
+
+.tarjeta .frontal
+{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px #000;
+}
+
+.tarjeta .frontal img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta .frontal h3
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: var(--viridian);
+    background: black;
+    text-align: center;
+}
+
+.tarjeta .tracera
+{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color:  var(--viridian);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+
+.tarjeta .tracera .link
+{
+    border-top: solid 1px  var(--viridian);
+    height: 50px;
+    line-height: 50px;
+}
+
+.tarjeta .tracera .link a
+{
+ color:  var(--viridian);
+}
+
+.tarjeta .tracera h3
+{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.tarjeta .tracera p
+{
+    letter-spacing: 1px;
+}
+
+.tarjeta:hover .frontal
+{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.tarjeta:hover .tracera
+{
+    transform: perspective(600px) rotateY(360deg);
+}
+/*-------------------------------------------------------------*/
+.cuerpo2
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.tarjeta2
+{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.tarjeta2 .cara
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: -5s;
+}
+
+.tarjeta2 .frontal2
+{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px #000;
+}
+
+.tarjeta2 .frontal2 img2
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta2 .frontal2 h3
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: black;
+    text-align: center;
+}
+
+.tarjeta2 .tracera2
+{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color:  var(--viridian);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+
+.tarjeta2 .tracera2 .link
+{
+    border-top: solid 1px  var(--viridian);
+    height: 50px;
+    line-height: 50px;
+}
+
+.tarjeta2 .tracera2 .link a
+{
+ color:  var(--viridian);
+}
+
+.tarjeta2 .tracera2 h3
+{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.tarjeta2 .tracera2 p
+{
+    letter-spacing: 1px;
+}
+
+.tarjeta2:hover .frontal2
+{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.tarjeta2:hover .tracera2
+{
+    transform: perspective(600px) rotateY(360deg);
+}
+/* Estilos para pantallas de tamaño mediano (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+footer {
+    padding-left: 50px;
+    display: flex;
+    background-color: #181823;
+}}

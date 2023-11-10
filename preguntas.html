@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Preguntas y Respuestas</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="preguntas.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      #content {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Preguntas y respuestas</h1>
+    <div id="content">
+      <h2>Juan David Martínez mena </h2>
+      <h2>Institución Universitaria de Envigado</h2>
+    </nav>
+ <main>
+        <section id="terminos">
+            <h2>Leer</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado utilizado para crear páginas web.</dd>
+                
+                <dt>CSS</dt>
+                <dd>Lenguaje utilizado para definir el estilo y la presentación de una página web.</dd>
+                
+                <dt>JavaScript</dt>
+                <dd>Lenguaje de programación ampliamente utilizado para agregar interactividad a sitios web.</dd>
+                
+            </dl>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas y Respuestas</h2>
+            
+
+            <div class="pregunta">
+                <p>Pregunta 1: ¿Qué lenguaje se utiliza para dar diseño a las páginas web?</p>
+                <input type="radio" name="p1" value="html" data-correcta="false"> HTML<br>
+                <input type="radio" name="p1" value="css" data-correcta="true"> CSS<br>
+                <input type="radio" name="p1" value="javascript" data-correcta="false"> JavaScript<br>
+            </div>
+
+
+            <div class="pregunta">
+                <p>Pregunta 2: ¿Cuáles son lenguajes de programación web?</p>
+                <input type="checkbox" name="p2" value="html" data-correcta="true"> HTML<br>
+                <input type="checkbox" name="p2" value="css" data-correcta="true"> CSS<br>
+                <input type="checkbox" name="p2" value="javascript" data-correcta="true"> JavaScript<br>
+                <input type="checkbox" name="p2" value="python" data-correcta="false"> Python<br>
+            </div>
+
+
+            <div class="pregunta">
+                <p>Pregunta 3: JavaScript es un lenguaje de programación ampliamente utilizado para agregar interactividad a sitios web. (Verdadero/Falso)</p>
+                <input type="radio" name="p3" value="verdadero" data-correcta="true"> Verdadero<br>
+                <input type="radio" name="p3" value="falso" data-correcta="false"> Falso<br>
+            </div>
+            
+            <button id="verificar">Verificar Respuestas</button>
+        </section>
+
+        <p id="puntaje"></p>
+    </main>
+    <script src="preguntas.js" >
+    </script>
+    <footer>
+        <h3 class="footerdesc">Juan David Martínez Mena - Institución Universitaria
+            de Envigado</h3>
+
+        <h3 class="footerdesc">Correo:jdmartinezm@correo.iue.edu.co</h3>    
+    </footer>
+  </body>
+</html>

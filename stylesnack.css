@@ -1,0 +1,229 @@
+:root{
+--champagne-pink: #ffe2d1ff;
+--nyanza: #e1f0c4ff;
+--cambridge-blue: #6bab90ff;
+--viridian: #55917fff;
+--eggplant: #5e4c5aff;
+--font-family: "Arial", sans-serif;
+
+}
+body
+{
+position: absolute;
+width: 1440px;
+height: 1024px;
+
+background-color: var(--viridian);
+flex-wrap: wrap;
+}
+
+.encabezado
+{
+position: absolute;
+width: 931px;
+height: 272px;
+left: 40px;
+top: 40px;
+
+margin-top: -2%;
+margin-left: -2%;
+
+justify-content: end;
+align-items: flex-start;
+}
+.titulo
+{
+position: absolute;
+width: 594px;
+height: 56px;
+left: 40px;
+top: 40px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 56px;
+
+color: #050505;
+
+margin-top: -1%;
+margin-left: -1%;
+
+justify-content: end;
+align-items: flex-start;
+
+}
+
+.subtitulo
+{
+position: absolute;
+width: 582px;
+height: 42px;
+left: 40px;
+top: 104px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000; 
+
+margin-top: -1%;
+margin-left: -1%;
+
+justify-content: end;
+align-items: flex-start;
+}
+
+.imgCabecera
+{
+position: absolute;
+width: 931px;
+height: 158px;
+left: 40px;
+top: 272px;
+padding: 0%;
+
+justify-content: end;
+align-items: flex-start;
+}
+
+
+
+.imgTecnologia 
+{
+position: absolute;
+width: 250px;
+height: 118px;
+left: 90px;
+top: 565px;
+
+background: url(tecnologia.jpg);
+border-radius: 20px;
+}
+
+.imgCiencia
+{
+position: absolute;
+width: 250px;
+height: 118px;
+left: 380px;
+top: 750px;
+
+background: url(ciencia.jpg);
+border-radius: 20px;
+}
+
+.imgEducacion
+{
+position: absolute;
+width: 250px;
+height: 122px;
+left: 685px;
+top: 940px;
+
+background: url(educacion.jpg);
+border-radius: 20px; 
+}
+
+.tecnologia 
+{
+position: absolute;
+width: 181px;
+height: 42px;
+left: 98px;
+top: 486px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+}
+
+.ciencia 
+{
+position: absolute;
+width: 181px;
+height: 42px;
+left: 390px;
+top: 677px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000; 
+}
+
+.educacion
+{
+position: absolute;
+width: 181px;
+height: 42px;
+left: 698px;
+top: 865px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+}
+
+.aparte
+{
+position: absolute;
+width: 359px;
+height: 828px;
+left: 1026px;
+top: 285px;
+
+background: #C4C4C4;
+}
+
+.parrafo
+{
+position: absolute;
+width: 337px;
+height: 781px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000; 
+}
+
+
+/* Estilos para pantallas de tamaño mediano (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+footer {
+    padding-left: 50px;
+    display: flex;
+    background-color: #181823;
+}}

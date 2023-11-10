@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo sobre el Modelo DOM</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilosConsultas.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      #content {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Modelo DOM</h1>
+    <div id="content">
+      <h2>¿Qué es el DOM?</h2>
+      <p>
+        El Modelo de Objetos del Documento (DOM) es una interfaz de programación
+        para documentos web. Representa la estructura del documento y permite
+        que un lenguaje de script pueda modificar su contenido, estructura y
+        estilo.
+      </p>
+      <img src="dom1.jpg" alt="imagen del DOM"
+      >
+      <h2>Cómo funciona?</h2>
+      <p>Cuando visitas una página web, tu navegador web descarga el código HTML de esa página y, a continuación, crea una representación interna de ese código en forma de un árbol de objetos.
+<h2>¿Cúal es su impotancia?</h2>
+<p>El DOM es esencial para la creación de aplicaciones web interactivas y dinámicas. Permite la creación de experiencias de usuario ricas y receptivas, como aplicaciones de una sola página (SPA), juegos web, formularios interactivos y mucho más. Sin el DOM, la web sería estática y limitada en términos de interacción y funcionalidad.</p>
+Cada elemento HTML se convierte en un nodo en este árbol de objetos, y estos nodos están interconectados de manera que representan la jerarquía y la relación entre los elementos en la página.</p>
+<img src="dom2.jpg" alt="imegen programando utilzando DOM"
+     width="400"
+  height="341" >
+    </div>
+    <script>
+      // Aquí puedes interactuar con el DOM usando JavaScript
+      var content = document.getElementById("content");
+      console.log(content);
+    </script>
+    <footer>
+        <h3 class="footerdesc">Juan David Martínez Mena - Institución Universitaria
+            de Envigado</h3>
+
+        <h3 class="footerdesc">Correo:jdmartinezm@correo.iue.edu.co</h3>    
+    </footer>
+  </body>
+</html>

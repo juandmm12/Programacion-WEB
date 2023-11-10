@@ -6,7 +6,7 @@
   --viridian: #55917fff;
   --eggplant: #5e4c5aff;
 }
-h
+
 head {
       background-color: var(--eggplant);
       color: var(--viridian);
@@ -25,5 +25,24 @@ p {
       color: var(--viridian);
       font-family: 'Roboto', sans-serif;
       font-size: 20px;
-      text-align: center;
+      text-align: left;
 }
+/* Estilos para pantallas de tamaño mediano (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+footer {
+    padding-left: 50px;
+    display: flex;
+    background-color: #181823;
+}}

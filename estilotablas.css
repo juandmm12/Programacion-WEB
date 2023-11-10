@@ -110,3 +110,28 @@ form {
 
   width: 30%;
 }
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: left;
+}
+/* Estilos para pantallas de tamaño mediano (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+footer {
+    padding-left: 50px;
+    display: flex;
+    background-color: #181823;
+}}
